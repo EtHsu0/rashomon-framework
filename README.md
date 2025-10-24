@@ -18,7 +18,6 @@ This repository contains the complete implementation and experimental framework 
 2. **Install dependencies**
    ```bash
    pip install pyyaml scikit-learn xgboost pandas tqdm typing-extensions cvxpy numba treefarms gosdt
-   pip install numpy=1.26.0
    pip install --no-deps roct odtlearn diffprivlib cvxpy groot-trees
    pip install --no-deps adversarial-robustness-toolbox
    ```
@@ -26,7 +25,7 @@ This repository contains the complete implementation and experimental framework 
    **Note**: Some models require additional dependencies:
    - **Gurobi**: Required for ROCT-N and ROCT-V (optimization-based robust models). Obtain a license from [gurobi.com](https://www.gurobi.com/)
    - **NumPy**: Some packages (groot-trees, roct) does not support NumPy>2.0
-   - If you only want to test with treefarms or simple models, comment/delete specific model files in `module/model/
+   - If you only want to test with treefarms or simple models, comment/delete specific model files in `module/model/`
 
 3. **Run a basic experiment**
    ```bash
