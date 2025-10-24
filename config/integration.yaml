@@ -1,0 +1,6 @@
+metrics:
+  - name: accuracy
+  - name: kantch_attack
+  - name: stability
+  - name: fairness
+  - name: membership_inference

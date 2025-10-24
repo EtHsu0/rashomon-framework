@@ -1,0 +1,48 @@
+% LaTeX table for dataset information
+% Requires: \usepackage{booktabs}
+% Requires: \usepackage[table]{xcolor} % for row coloring
+
+\begin{table}[htbp]
+\caption{Dataset Information}
+\label{tab:datasets_info}
+\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{llrrrclrl}
+\toprule
+\rowcolors{2}{gray!6}{white}
+Dataset & Source & \# Inst. & \# Feat. & \% Pos. & Bin. & Sensitive Attr. & Sens. \% & Metrics \\
+\midrule
+adult & DPF & 45222 & 18 & 24.8\% & \checkmark & Sex=Male & 32.5\% &  \\
+adult & openml & 45222 & 97 & 24.8\% &  & sex\_Male & 32.5\% &  \\
+bank & DPF & 45211 & 47 & 11.7\% & \checkmark & marital:married & 39.8\% &  \\
+bank & tabular & 10578 & 7 & 50.0\% &  & V1 & 91.7\% &  \\
+banknote & default & 1372 & 4 & 44.5\% &  & --- &  &  \\
+blood & default & 748 & 4 & 23.8\% &  & --- &  &  \\
+breast-w & default & 683 & 9 & 35.0\% &  & --- &  &  \\
+cal-houses & tabular & 20634 & 8 & 50.0\% &  & MedInc & 50.0\% &  \\
+census-income & DPF & 284556 & 118 & 6.1\% & \checkmark & race: White & 16.0\% &  \\
+comm & DPF & 1994 & 98 & 93.9\% & \checkmark & racepctblack<0.07 & 48.6\% &  \\
+compas & DPF & 6172 & 10 & 54.5\% & \checkmark & race:Caucasian & 65.9\% &  \\
+compas & other & 6907 & 7 & 46.3\% &  & sex=female & 80.8\% &  \\
+credit-fusion & tabular & 16714 & 10 & 50.0\% &  & age & 77.7\% &  \\
+def-credit & DPF & 29986 & 21 & 22.1\% & \checkmark & SEX\_Female & 39.6\% &  \\
+def-credit & tabular & 29986 & 28 & 22.1\% &  & SEX\_Male & 60.4\% &  \\
+diabetes & default & 768 & 8 & 34.9\% &  & --- &  &  \\
+diabetes-us & DPF & 45715 & 86 & 24.2\% & \checkmark & gender=Female & 45.2\% &  \\
+diabetes-us & openml & 22714 & 8 & 50.0\% &  & gender=Male & 54.0\% &  \\
+diabetes-us & tabular & 71090 & 7 & 50.0\% &  & --- &  &  \\
+fico & other & 10459 & 23 & 52.2\% &  & --- &  &  \\
+german & DPF & 1000 & 70 & 70.0\% & \checkmark & Gender=Male & 31.0\% &  \\
+haberman & default & 306 & 3 & 26.5\% &  & --- &  &  \\
+ionosphere & default & 351 & 34 & 64.1\% &  & --- &  &  \\
+mimic & other & 24508 & 17 & 12.2\% &  & --- &  &  \\
+oulad & DPF & 21562 & 46 & 68.0\% & \checkmark & gender:M & 46.4\% &  \\
+parkinsons & default & 195 & 22 & 75.4\% &  & --- &  &  \\
+sonar & default & 208 & 60 & 53.4\% &  & --- &  &  \\
+spambase & default & 4601 & 57 & 39.4\% &  & --- &  &  \\
+spectf & default & 267 & 44 & 79.4\% &  & --- &  &  \\
+student-mat & DPF & 395 & 56 & 67.1\% & \checkmark & sex:M & 52.7\% &  \\
+student-por & DPF & 649 & 56 & 84.6\% & \checkmark & sex:M & 59.0\% &  \\
+wine-quality & default & 6497 & 11 & 63.3\% &  & --- &  &  \\
+\bottomrule
+\end{tabular}
+\end{table}

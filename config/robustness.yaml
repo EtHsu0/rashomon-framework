@@ -1,0 +1,28 @@
+# Dataset-specific epsilon for Kantch attack metric
+# Models get epsilon from script arguments (--epsilon for GROOT/FPRDT/ROCT-V, --lamb for ROCT-N)
+dataset_epsilon:
+  banknote: 0.1
+  blood: 0.1
+  breast-w: 0.3
+  diabetes: 0.05
+  parkinsons: 0.1
+  spectf: 0.1
+  
+  compas: 0.1
+  fico: 0.1
+  default-credit: 0.1
+  
+  haberman: 0.1
+  ionosphere: 0.2
+  mimic: 0.1
+  sonar: 0.2
+  spambase: 0.05
+  wine-quality: 0.05
+
+# Default epsilon if dataset not specified above
+default_epsilon: 0.1
+
+metrics:
+  - name: accuracy
+  - name: kantch_attack
+    use_dataset_epsilon: true  # Use dataset-specific epsilon from above
